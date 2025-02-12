@@ -23,7 +23,7 @@ const rootElement = document.getElementById('root');
 
 const MainApp = () => {
     return (
-      <BrowserRouter>
+      <BrowserRouter basename="/react-1">
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -33,7 +33,7 @@ const MainApp = () => {
           <Route path="/pricing" element={<Pricing />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
-        <Footer /> 
+        <Footer />
       </BrowserRouter>
     );
 };
