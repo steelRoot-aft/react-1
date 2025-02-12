@@ -1,0 +1,223 @@
+.body {
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+  padding: 70px 0;
+}
+
+/* Header */
+.header {
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  align-items: center;
+  column-gap: 40px;
+}
+.header h2{
+  display: flex;
+  justify-content: center;
+}
+.header p {
+  max-width: 580px;
+}
+
+/* Main */
+.main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 40px;
+  padding: 80px 0 100px 0;
+}
+/* Первая карточка */
+  .one {
+  background: var(--grey);
+  }
+  .one h3 {
+  background: var(--green);
+  }
+  .one button {
+  transition: all 0.3s linear 0s;
+  }
+  .one button svg path {
+  color: var(--green);
+  transition: all 0.3s linear 0s;
+  }
+
+/* Вторая карточка */
+.two {
+  background: var(--green);
+}
+.two h3 {
+  background: var(--grey);
+}
+
+.two button {
+  transition: all 0.3s linear 0s;
+}
+
+.two button svg path {
+  color: var(--green);
+  transition: all 0.3s linear 0s;
+}
+
+.two button svg circle {
+  background: #000;
+}
+
+/* Третья карточка */
+.three {
+  background: var(--dark);
+}
+.three h3 {
+  background: var(--grey);
+}
+
+.three button {
+  transition: all 0.3s linear 0s;
+  color: #fff;
+}
+
+.three button svg path {
+  color: var(--dark);
+  transition: all 0.3s linear 0s;
+}
+
+
+/* Четвертая карточка */
+.four {
+  background: var(--grey);
+}
+
+.four h3 {
+  background: var(--green);
+  display: block;
+}
+
+.four button {
+  transition: all 0.3s linear 0s;
+  color: var(--black);
+}
+
+.four button svg path {
+  color: var(--green);
+  transition: all 0.3s linear 0s;
+}
+
+
+/* Пятая карточка */
+.five {
+  background: var(--green);
+}
+
+.five h3 {
+  background: var(--grey);
+  display: block;
+}
+
+.five button {
+  transition: all 0.3s linear 0s;
+  color: var(--black);
+}
+
+.five button svg path {
+  color: var(--green);
+  transition: all 0.3s linear 0s;
+}
+
+/* Шестя карточка */
+.six {
+  background: var(--dark);
+}
+
+.six h3 {
+  background: var(--green);
+  display: block;
+}
+
+.six button {
+  transition: all 0.3s linear 0s;
+  color: #fff;
+}
+
+.six button svg path {
+  color: var(--dark);
+  transition: all 0.3s linear 0s;
+}
+/* Footer */
+
+.footer {
+  display: grid;
+  grid-template: 1fr / minmax(auto, 450px);
+  background: var(--grey);
+  border-radius: 45px;
+  padding: 60px;
+  row-gap: 26px;
+  width: 100%;
+  position: relative;
+}
+
+.footer::before {
+  content: '';
+  width: 100%;
+  height: 115%;
+  background: url(../../../public/happen.png)right 0/ contain no-repeat;
+  position: absolute;
+  left: 0;
+  top: -7.5%;
+}
+
+.footer h3 {
+  font-weight: 500;
+}
+
+.footer p {
+  line-height: 1.2;
+}
+
+.footer button {
+  max-width: 288px;
+  width: 100%;
+  height: 68px;
+  border-radius: 14px;
+  background: var(--black);
+  font-size: 1.25rem;
+  color: #fff;
+  transition: all 0.3s linear 0s;
+}
+
+.footer button:hover {
+  box-shadow: 0 0 10px var(--black);
+}
+
+
+@media (max-width: 850px) {
+  .main {
+    grid-template-columns: minmax(auto, 600px);
+    justify-content: center;
+  }
+  .footer::before {
+    display: none;
+  }
+}
+
+@media (max-width: 424px) {
+    .header {
+      grid-template: 1fr 1fr / 1fr;
+      row-gap: 30px;
+    }
+    .header h2 {
+      margin: 0 auto;
+    }
+    .header p {
+      text-align: center;
+      max-width: 370px;
+      margin: 0 auto;
+    }
+
+    .main {
+      padding: 40px 0 50px 0;
+    }
+  
+    .footer {
+      padding: 30px;
+    }
+
+}

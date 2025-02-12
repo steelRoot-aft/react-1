@@ -1,0 +1,145 @@
+.body {
+  padding: 70px 0;
+  display: grid;
+  grid-template: auto 1fr / 1fr;
+  row-gap: 80px;
+}
+
+.top {
+  display: grid;
+  grid-template: 1fr / auto 1fr;
+  column-gap: 20px;
+  align-items: center;
+}
+
+.top h2 {}
+
+.top p {
+  max-width: 300px;
+}
+
+.bottom {
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 30px;
+}
+
+.column {
+  box-shadow: 0 5px 0 0 var(--dark);
+  background: var(--grey);
+  border-radius: 45px;
+  padding: 41px 60px;
+  position: relative;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.column span {
+  position: absolute;
+  top: 45px;
+  left: 60px;
+  font-size: 3.75rem;
+  font-weight: 500;
+}
+
+.title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 0.5s ease-in-out 0s;
+  border-bottom: 1px solid var(--grey) ;
+  column-gap: 15px;
+}
+
+.title h3 {
+  padding: 0 0 0 80px;
+  font-weight: 500;
+}
+
+.title button {
+  background: none;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.content {
+  overflow: hidden;
+  opacity: 0;
+  height: 0;
+  transition: all 0.5s ease-in-out 0s;
+}
+
+.content p {
+  line-height: 1.4;
+}
+
+.column.open {
+  background: var(--green);
+}
+
+.column.open .title {
+  padding: 0 0 30px 0;
+  border-bottom: 1px solid var(--dark);
+}
+
+.column.open button {
+  transform: rotate(145deg);
+}
+
+.column.open .content {
+  padding: 30px 0 0 0;
+  opacity: 1;
+  overflow: visible;
+  height: auto;
+}
+
+
+@media (max-width: 650px) {
+  .top {
+    grid-template: auto 1fr / 1fr;
+    row-gap: 20px;
+  }
+
+  .top h2 {
+    margin: 0 auto;
+  }
+
+  .top p {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .column {
+    padding: 21px 30px;
+  }
+
+  .column span {
+    font-size: 2.5rem;
+    top: 35px;
+    left: 30px;
+  }
+
+  .title h3 {
+    padding: 0 0 0 50px;
+  }
+  
+  .title button svg {
+    max-width: 50px;
+  }
+
+}
+
+@media (max-width: 424px) {
+  .column span {
+    display: none;
+  }
+
+  .title {
+    column-gap: 5px;
+  }
+
+  .title h3 {
+    padding: 0;
+  }
+}

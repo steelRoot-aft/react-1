@@ -1,0 +1,49 @@
+:root {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --grey: #F3F3F3;
+  --dark: #191A23;
+  --green: #B9FF66;
+  --black: #000000;
+}
+
+body {
+  display: grid;
+  grid-template: 1fr / 1fr minmax(auto, 1170px) 1fr;
+  
+}
+
+
+
+body.lock {
+  overflow: hidden;
+}
+
+#root {
+  font-family: "Space Grotesk", serif;
+  grid-column: 2 / 3;
+  
+  min-height: 100%;
+  display: grid;
+  grid-template: auto 1fr auto / 1fr;
+}
+
+h1 {font-size: 3.75rem;}
+h2 {
+  font-size: 2.5rem;
+  background: var(--green);
+  border-radius: 7px;
+  padding: 3px 7px;
+}
+h3 {font-size: 1.875rem;}
+h4 {font-size: 1.25rem;}
+p {font-size: 1.125rem;}
+
+@media (max-width: 440px) {
+  h1 {font-size: 2.688rem;}
+  h2 {font-size: 2.25rem;}
+  h3 {font-size: 1.625rem;}
+  h4 {font-size: 1.125rem;}
+  p {font-size: 1rem;}
+}

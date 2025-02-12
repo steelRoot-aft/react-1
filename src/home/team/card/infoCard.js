@@ -1,0 +1,88 @@
+const infoCard = [
+  {
+    image: 'public/JohnSmith.jpg',
+    name: 'John Smith',
+    position: 'CEO and Founder',
+    link: '#',
+    bio: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+  },
+  {
+    image: 'public/JaneDoe.png',
+    name: 'Jane Doe',
+    position: 'Director of Operations',
+    link: '#',
+    bio: '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+  },
+  {
+    image: 'public/MichaelBrown.png',
+    name: 'Michael Brown',
+    position: 'Senior SEO Specialist',
+    link: '#',
+    bio: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
+  },
+  {
+    image: 'public/EmilyJohnson.png',
+    name: 'Emily Johnson',
+    position: 'PPC Manager',
+    link: '#',
+    bio: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
+  },
+  {
+    image: 'public/BrianWilliams.png',
+    name: 'Brian Williams',
+    position: 'Social Media Specialist',
+    link: '#',
+    bio: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
+  },
+  {
+    image: 'public/SarahKim.png',
+    name: 'Sarah Kim',
+    position: 'Content Creator',
+    link: '#',
+    bio: '2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries',
+  },
+  {
+    image: 'public/JohnSmith.jpg',
+    name: 'John Smith',
+    position: 'CEO and Founder',
+    link: '#',
+    bio: '10+ years of experience in digital marketing. Expertise in SEO, PPC, and content strategy',
+  },
+  {
+    image: 'public/JaneDoe.png',
+    name: 'Jane Doe',
+    position: 'Director of Operations',
+    link: '#',
+    bio: '7+ years of experience in project management and team leadership. Strong organizational and communication skills',
+  },
+  {
+    image: 'public/MichaelBrown.png',
+    name: 'Michael Brown',
+    position: 'Senior SEO Specialist',
+    link: '#',
+    bio: '5+ years of experience in SEO and content creation. Proficient in keyword research and on-page optimization',
+  },
+  {
+    image: 'public/EmilyJohnson.png',
+    name: 'Emily Johnson',
+    position: 'PPC Manager',
+    link: '#',
+    bio: '3+ years of experience in paid search advertising. Skilled in campaign management and performance analysis',
+  },
+  {
+    image: 'public/BrianWilliams.png',
+    name: 'Brian Williams',
+    position: 'Social Media Specialist',
+    link: '#',
+    bio: '4+ years of experience in social media marketing. Proficient in creating and scheduling content, analyzing metrics, and building engagement',
+  },
+  {
+    image: 'public/SarahKim.png',
+    name: 'Sarah Kim',
+    position: 'Content Creator',
+    link: '#',
+    bio: '2+ years of experience in writing and editing. Skilled in creating compelling, SEO-optimized content for various industries',
+  },
+];
+
+export default infoCard;
